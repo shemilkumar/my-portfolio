@@ -1,18 +1,56 @@
 import { FC } from "react";
+import { MoonIcon } from "./assests/Icons";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { motion } from "framer-motion";
 
 interface NavbarProps {}
 
+interface NavigationLinkProps {
+  text: string;
+  href: string;
+  className?: string;
+}
+
+const NavigationLink: FC<NavigationLinkProps> = ({
+  text,
+  href,
+  className = "",
+}) => {
+  const router = useRouter();
+
+  return (
+    <>
+      <Link
+        href={href}
+        className={`${
+          router.asPath === href ? "text-dark" : ""
+        } cursor-pointer ${className}`}
+      >
+        {text}
+      </Link>
+    </>
+  );
+};
+
 const Navbar: FC<NavbarProps> = ({}) => {
   return (
-    // <>
-    <header className="absolute z-10 flex items-center justify-end w-full gap-8 py-6 text-lg font-semibold text-dark/75">
-      <nav>Home</nav>
-      <nav>About</nav>
-      <nav>Projects</nav>
-      <nav>Contact</nav>
-      {/* <nav className="w-12 h-12 text-white rounded-full bg-dark ">Dark</nav> */}
-    </header>
-    // </>
+    <>
+      <motion.header
+        className="absolute z-10 flex items-center justify-end w-full gap-8 py-6 text-lg font-semibold text-dark/70"
+        initial={{ y: -50 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 1 }}
+      >
+        <NavigationLink text="Home" href="/" />
+        <NavigationLink text="About" href="/about" />
+        <NavigationLink text="Projects" href="/project" />
+        <NavigationLink text="Contact" href="/contact" />
+        <div className="w-8 p-1 rounded-full bg-dark text-light">
+          <MoonIcon className="" />
+        </div>
+      </motion.header>
+    </>
   );
 };
 
