@@ -2,6 +2,7 @@ import HireMe from "@/components/assests/HireMe";
 import { CircularText, LinkArrow } from "@/components/assests/Icons";
 import Headline from "@/components/ui/Headline";
 import { motion } from "framer-motion";
+import Link from "next/link";
 export default function Home() {
   const container = {
     hidden: { opacity: 0 },
@@ -39,15 +40,22 @@ export default function Home() {
           className="flex items-center gap-4 mt-4 cursor-pointer"
           variants={item}
         >
-          <div className="flex items-center gap-1 px-4 py-2 font-semibold border-2 rounded-md bg-dark text-light hover:bg-light hover:text-dark border-dark">
+          <Link
+            href={"/Resume.pdf"}
+            target="_blank"
+            className="flex items-center gap-1 px-4 py-2 font-semibold border-2 rounded-md bg-dark text-light hover:bg-light hover:text-dark border-dark"
+          >
             Resume
             <LinkArrow className="w-6" />
-          </div>
+          </Link>
 
-          <div className="flex items-center gap-1 cursor-pointer border-dark">
+          <Link
+            href={"/contact"}
+            className="flex items-center gap-1 cursor-pointer border-dark"
+          >
             <div className="underline underline-offset-4">Contact</div>
             <div className="text-2xl">{">"}</div>
-          </div>
+          </Link>
         </motion.div>
       </motion.div>
 
