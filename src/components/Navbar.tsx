@@ -44,7 +44,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
       >
         <NavigationLink text="Home" href="/" />
         <NavigationLink text="About" href="/about" />
-        <NavigationLink text="Projects" href="/project" />
+        <NavigationLink text="Projects" href="/projects" />
         <NavigationLink text="Contact" href="/contact" />
         <div className="w-8 p-1 rounded-full bg-dark text-light">
           <MoonIcon className="" />
