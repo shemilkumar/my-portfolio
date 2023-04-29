@@ -2,7 +2,7 @@ import { FC } from "react";
 import * as React from "react";
 
 interface IconProps {
-  className: string;
+  className?: string;
 }
 
 export const GithubIcon: FC<IconProps> = ({ className, ...rest }) => (
