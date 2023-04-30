@@ -41,7 +41,7 @@ const FeaturedProject: FC<ProjectProps> = ({
   link,
 }) => {
   return (
-    <article className="flex items-center justify-center w-full gap-8 p-12 border border-solid shadow-2xl border-dark/25 rounded-xl">
+    <motion.article className="flex items-center justify-center w-full gap-8 p-12 border border-solid shadow-2xl border-dark/25 rounded-xl">
       <Image alt="project" src={image} className="w-1/2 rounded-lg" />
       <div className="flex flex-col items-start justify-between w-1/2 gap-4">
         <span className="text-xl font-semibold text-purple-600">{type}</span>
@@ -62,7 +62,7 @@ const FeaturedProject: FC<ProjectProps> = ({
           </Link>
         </div>
       </div>
-    </article>
+    </motion.article>
   );
 };
 
@@ -99,8 +99,8 @@ const Projects: FC<ProjectsProps> = ({}) => {
   return (
     <>
       <SEO pageTitle="Projects | Shemil" pageDescription="" />
-      <main className="w-full">
-        <div className="flex justify-center pt-36">
+      <main className="">
+        <div className="flex justify-center w-full pt-36">
           <Headline title="My Projects" />
         </div>
         <div className="grid grid-cols-12 pb-20 mt-16 gap-y-40 gap-x-24">
@@ -109,7 +109,6 @@ const Projects: FC<ProjectsProps> = ({}) => {
             initial={{ y: -600, opacity: 0 }}
             whileInView={{
               y: 0,
-
               opacity: 1,
               transition: { duration: 0.5 },
             }}
@@ -124,13 +123,14 @@ const Projects: FC<ProjectsProps> = ({}) => {
               link="https://stayhub.shemilkumar.com"
             />
           </motion.div>
+
           <motion.div
             className="col-span-6"
             initial={{ x: 800, opacity: 0 }}
             whileInView={{
               x: 0,
               opacity: 1,
-              transition: { duration: 0.5 },
+              transition: { duration: 0.6 },
             }}
             viewport={{ once: true }}
           >
@@ -148,7 +148,7 @@ const Projects: FC<ProjectsProps> = ({}) => {
             whileInView={{
               x: 0,
               opacity: 1,
-              transition: { duration: 0.5 },
+              transition: { duration: 0.6 },
             }}
             viewport={{ once: true }}
           >
@@ -182,11 +182,11 @@ const Projects: FC<ProjectsProps> = ({}) => {
           </motion.div>
           <motion.div
             className="col-span-6"
-            initial={{ x: 400, opacity: 0 }}
+            initial={{ x: 800, opacity: 0 }}
             whileInView={{
               x: 0,
               opacity: 1,
-              transition: { duration: 0.5 },
+              transition: { duration: 0.7 },
             }}
             viewport={{ once: true }}
           >
@@ -201,16 +201,13 @@ const Projects: FC<ProjectsProps> = ({}) => {
           <motion.div
             className="col-span-6"
             initial={{
-              x: -400,
+              x: -800,
               opacity: 0,
-              display: "hidden",
-              // visibility: "hidden",
             }}
             whileInView={{
               x: 0,
-              display: "visible",
               opacity: 1,
-              transition: { duration: 0.5 },
+              transition: { duration: 0.7 },
             }}
             viewport={{ once: true }}
           >
