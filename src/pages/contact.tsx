@@ -4,7 +4,6 @@ import { GithubIcon, LinkedInIcon } from "@/components/assests/Icons";
 import Headline from "@/components/ui/Headline";
 import { container, item } from "@/util/staggeredAnimation";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
 
@@ -25,7 +24,7 @@ const contact: FC<contactProps> = ({}) => {
             className="col-span-12 pb-4 border-b-2 border-dark"
             variants={item}
           >
-            <Headline title="Contact" />
+            <Headline title="Contact" className="text-start" />
           </motion.div>
 
           <div className="col-span-6">

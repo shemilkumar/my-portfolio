@@ -1,4 +1,4 @@
-import Headline from "@/components/ui/Headline";
+import Headline, { HeadlineAnimated } from "@/components/ui/Headline";
 import { FC } from "react";
 import StayHubImage from "../../public/img/StayHub-min.png";
 import ShopspotImage from "../../public/img/Shopspot-min.png";
@@ -99,10 +99,8 @@ const Projects: FC<ProjectsProps> = ({}) => {
   return (
     <>
       <SEO pageTitle="Projects | Shemil" pageDescription="" />
-      <main className="">
-        <div className="flex justify-center w-full pt-36">
-          <Headline title="My Projects" />
-        </div>
+      <main className="w-full">
+        <HeadlineAnimated title="My Projects" className="pt-36" />
         <div className="grid grid-cols-12 pb-20 mt-16 gap-y-40 gap-x-24">
           <motion.div
             className="col-span-12"

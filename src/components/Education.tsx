@@ -1,5 +1,5 @@
 import { FC, useRef } from "react";
-import Headline from "./ui/Headline";
+import Headline, { HeadlineAnimated } from "./ui/Headline";
 import ProfessionalDetails from "./ProfessionalDetails";
 import { motion, useScroll } from "framer-motion";
 
@@ -14,9 +14,7 @@ const Education: FC<EducationProps> = ({}) => {
 
   return (
     <article className="w-full mb-72">
-      <div className="flex justify-center my-24">
-        <Headline title="Education" />
-      </div>
+      <HeadlineAnimated title="Education" className="my-24 text-center" />
 
       <div ref={ref} className="relative w-[60%] mx-auto mb-20">
         <motion.div

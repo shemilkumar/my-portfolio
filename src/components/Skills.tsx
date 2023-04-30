@@ -1,5 +1,5 @@
 import { FC } from "react";
-import Headline from "./ui/Headline";
+import { HeadlineAnimated } from "./ui/Headline";
 import { motion } from "framer-motion";
 
 interface SkillsProps {}
@@ -27,9 +27,7 @@ const Skill: FC<SkillProps> = ({ name, x, y }) => {
 const Skills: FC<SkillsProps> = ({}) => {
   return (
     <article className="w-full mt-12">
-      <div className="flex justify-center my-12 ">
-        <Headline title="Skills" />
-      </div>
+      <HeadlineAnimated title="Skills" className="my-12 " />
 
       <div className="relative flex items-center justify-center w-full h-screen rounded-full bg-circularLight">
         <motion.div
