@@ -27,7 +27,9 @@ const about: FC<aboutProps> = ({}) => {
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.7 }}
           >
-            <h2 className="mb-4 font-semibold text-dark/75">Biography</h2>
+            <h2 className="mb-4 font-semibold text-dark/75 dark:text-light/75">
+              Biography
+            </h2>
             <div className="flex flex-col justify-between gap-8 font-normal">
               <p>
                 {`Hi, I'm Shemil, As a self-learned MERN stack developer, I have a passion for creating dynamic, responsive and user-friendly web applications. I have invested significant time and effort in learning the MERN (MongoDB, Express, React, Node.js) stack, and have gained a strong understanding of each of its components.`}

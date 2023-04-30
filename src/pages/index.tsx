@@ -1,5 +1,6 @@
 import HireMe from "@/components/assests/HireMe";
 import { CircularText, LinkArrow } from "@/components/assests/Icons";
+import Button from "@/components/ui/Button";
 import Headline from "@/components/ui/Headline";
 import { slowContainer, slowItem } from "@/util/staggeredAnimation";
 import { motion } from "framer-motion";
@@ -27,14 +28,11 @@ export default function Home() {
           className="flex items-center gap-4 mt-4 cursor-pointer"
           variants={slowItem}
         >
-          <Link
+          <Button
+            text="Resume"
+            icon={<LinkArrow className="w-6" />}
             href={"/Resume.pdf"}
-            target="_blank"
-            className="flex items-center gap-1 px-4 py-2 font-semibold border-2 rounded-md bg-dark text-light hover:bg-light hover:text-dark border-dark"
-          >
-            Resume
-            <LinkArrow className="w-6" />
-          </Link>
+          />
 
           <Link
             href={"/contact"}

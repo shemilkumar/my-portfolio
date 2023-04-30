@@ -16,6 +16,7 @@ export const HeadlineAnimated: FC<HeadlineProps> = ({
       initial={{ y: -100, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.7 }}
+      viewport={{ once: true }}
     >
       {title}
     </motion.h1>

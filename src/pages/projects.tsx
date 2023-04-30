@@ -12,6 +12,7 @@ import Link from "next/link";
 import { GithubIcon } from "@/components/assests/Icons";
 import SEO from "@/components/SEO";
 import { motion } from "framer-motion";
+import Button, { ButtonOutline } from "@/components/ui/Button";
 
 interface ProjectsProps {}
 interface ProjectProps {
@@ -41,10 +42,12 @@ const FeaturedProject: FC<ProjectProps> = ({
   link,
 }) => {
   return (
-    <motion.article className="flex items-center justify-center w-full gap-8 p-12 border border-solid shadow-2xl border-dark/25 rounded-xl">
+    <motion.article className="flex items-center justify-center w-full gap-8 p-12 border border-solid shadow-2xl border-dark/25 dark:shadow-purple-300 rounded-xl">
       <Image alt="project" src={image} className="w-1/2 rounded-lg" />
       <div className="flex flex-col items-start justify-between w-1/2 gap-4">
-        <span className="text-xl font-semibold text-purple-600">{type}</span>
+        <span className="text-xl font-semibold text-transparent bg-purple-600 bg-gradient-to-tr from-purple-600 to-blue-600 bg-clip-text">
+          {type}
+        </span>
         <h1 className="text-3xl font-bold">{title}</h1>
         <div className="flex flex-col items-start justify-between gap-4 text-base font-medium">
           <p className="">{summary}</p>
@@ -53,13 +56,8 @@ const FeaturedProject: FC<ProjectProps> = ({
           <Link href={github} target="_blank" className="w-10 h-auto">
             <GithubIcon />
           </Link>
-          <Link
-            href={link}
-            target="_blank"
-            className="flex items-center gap-1 px-4 py-2 font-semibold border-2 rounded-md bg-dark text-light hover:bg-light hover:text-dark border-dark"
-          >
-            Visit Project
-          </Link>
+      
+          <Button text="Visit Project" href={link} />
         </div>
       </div>
     </motion.article>
@@ -68,20 +66,17 @@ const FeaturedProject: FC<ProjectProps> = ({
 
 const Project: FC<ProjectProps> = ({ image, title, type, github, link }) => {
   return (
-    <article className="flex flex-col items-center justify-center w-full gap-8 p-6 border border-solid shadow-2xl rounded-2xl">
+    <article className="flex flex-col items-center justify-center w-full gap-8 p-6 border border-solid shadow-2xl dark:shadow-b-lg rounded-2xl dark:shadow-purple-300 shad">
       <Image alt="project" src={image} className="w-full rounded-lg" />
       <div className="flex flex-col items-start justify-between w-full gap-4">
-        <span className="text-xl font-semibold text-purple-600">{type}</span>
+        <span className="text-xl font-semibold text-transparent bg-purple-600 bg-gradient-to-tr from-purple-600 to-blue-600 bg-clip-text">
+          {type}
+        </span>
         <h1 className="text-3xl font-bold">{title}</h1>
 
         <div className="flex items-center justify-between w-full gap-4 mt-2">
-          <Link
-            href={link}
-            target="_blank"
-            className="flex items-center gap-1 px-3 py-1.5 text-sm font-semibold border-2 rounded-full bg-light text-dark hover:bg-light hover:text-dark border-dark"
-          >
-            Visit
-          </Link>
+          <ButtonOutline text="Visit" href={link} />
+
           <Link
             href={github}
             target="_blank"

@@ -4,6 +4,8 @@ import Head from "next/head";
 import { Montserrat } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Layout from "@/components/Layout";
+import { useEffect } from "react";
+import checkTheme from "@/util/themeCheck";
 
 const montserrat = Montserrat({
   subsets: ["latin"],

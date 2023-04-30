@@ -25,7 +25,7 @@ const Details: FC<DetailsProps> = ({ details }) => {
   return (
     <div>
       <h2 className="text-xl font-semibold">{details.position}</h2>
-      <div className="text-base text-dark/75">{`${details.time} | ${details.place}`}</div>
+      <div className="text-base text-dark/75 dark:text-light/75">{`${details.time} | ${details.place}`}</div>
       <p className="mt-1 text-base font-normal ">{details.info}</p>
     </div>
   );

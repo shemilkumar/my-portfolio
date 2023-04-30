@@ -21,7 +21,7 @@ const contact: FC<contactProps> = ({}) => {
           animate="show"
         >
           <motion.div
-            className="col-span-12 pb-4 border-b-2 border-dark"
+            className="col-span-12 pb-4 border-b-2 border-dark dark:border-light"
             variants={item}
           >
             <Headline title="Contact" className="text-start" />
@@ -30,7 +30,7 @@ const contact: FC<contactProps> = ({}) => {
           <div className="col-span-6">
             <motion.div className="flex items-center gap-12" variants={item}>
               <h2 className="text-xl font-semibold uppercase">Mail</h2>
-              <ul className="flex flex-col gap-2 text-base font-medium text-dark/75">
+              <ul className="flex flex-col gap-2 text-base font-medium text-dark/75 dark:text-light/75">
                 <motion.li>
                   <Link
                     href="mailto:shemil0055@gmail.com"
@@ -50,7 +50,7 @@ const contact: FC<contactProps> = ({}) => {
           <div className="col-span-6 ">
             <motion.div className="flex gap-12" variants={container}>
               <h2 className="text-xl font-semibold uppercase">Social medias</h2>
-              <ul className="flex flex-col gap-2 text-base font-medium text-dark/75">
+              <ul className="flex flex-col gap-2 text-base font-medium text-dark/75 dark:text-light/75">
                 <motion.li variants={item}>
                   <Link
                     href="https://linkedin.com/in/shemilkumar"
@@ -69,7 +69,7 @@ const contact: FC<contactProps> = ({}) => {
                     target="_blank"
                     className="flex items-center gap-2 "
                   >
-                    <span className="w-7">
+                    <span className="w-7 dark:text-white">
                       <GithubIcon />
                     </span>
                     <span>github</span>

@@ -3,6 +3,7 @@ import * as React from "react";
 
 interface IconProps {
   className?: string;
+  dark?: boolean;
 }
 
 export const GithubIcon: FC<IconProps> = ({ className, ...rest }) => (
@@ -83,7 +84,7 @@ export const SunIcon: FC<IconProps> = ({ className, ...rest }) => (
         d="M7 6 C7 12.08 11.92 17 18 17 C18.53 17 19.05 16.96 19.56 16.89 C17.95 19.36 15.17 21 12 21 C7.03 21 3 16.97 3 12 C3 8.83 4.64 6.05 7.11 4.44 C7.04 4.95 7 5.47 7 6 Z"
         opacity="0"
       >
-        <animate attributeName="opacity" begin="0.5s" to="1" />
+        <set attributeName="opacity" begin="0.5s" to="1" />
       </path>
     </g>
     <g fill="currentColor" fillOpacity="0">
@@ -209,7 +210,7 @@ export const SunIcon: FC<IconProps> = ({ className, ...rest }) => (
       fill="currentColor"
       mask="url(#lineMdSunnyFilledLoopToMoonFilledLoopTransition1)"
     >
-      <animate attributeName="opacity" begin="0.5s" to="0" />
+      <set attributeName="opacity" begin="0.5s" to="0" />
       <animate
         fill="freeze"
         attributeName="r"
@@ -306,7 +307,8 @@ export const MoonIcon: FC<IconProps> = ({ className, ...rest }) => (
       strokeWidth="2"
     >
       <path d="M7 6 C7 12.08 11.92 17 18 17 C18.53 17 19.05 16.96 19.56 16.89 C17.95 19.36 15.17 21 12 21 C7.03 21 3 16.97 3 12 C3 8.83 4.64 6.05 7.11 4.44 C7.04 4.95 7 5.47 7 6 Z" />
-      <animate attributeName="opacity" begin="0.6s" to="0" />
+      <set attributeName="opacity" begin="0.6s" to="0" />
+      {/* <animate attributeName="opacity" begin="0.6s" to="0" /> */}
     </g>
     <mask id="lineMdMoonFilledToSunnyFilledLoopTransition0">
       <circle cx="12" cy="12" r="12" fill="#fff" />
@@ -365,7 +367,8 @@ export const MoonIcon: FC<IconProps> = ({ className, ...rest }) => (
       mask="url(#lineMdMoonFilledToSunnyFilledLoopTransition0)"
       opacity="0"
     >
-      <animate attributeName="opacity" begin="0.6s" to="1" />
+      <set attributeName="opacity" begin="0.6s" to="1" />
+      {/* <animate attributeName="opacity" begin="0.6s" to="1" /> */}
       <animate
         fill="freeze"
         attributeName="r"
@@ -377,7 +380,7 @@ export const MoonIcon: FC<IconProps> = ({ className, ...rest }) => (
   </svg>
 );
 
-export const MyCircularText: FC<IconProps> = ({ className, ...rest }) => (
+export const MyCircularText: FC<IconProps> = ({ className, dark, ...rest }) => (
   <svg
     version="1.0"
     xmlns="http://www.w3.org/2000/svg"
@@ -393,7 +396,7 @@ export const MyCircularText: FC<IconProps> = ({ className, ...rest }) => (
     </metadata>
     <g
       transform="translate(0.000000,1080.000000) scale(0.100000,-0.100000)"
-      fill="#000000"
+      fill={dark ? "#fff" : "#000"}
       stroke="none"
     >
       <path
@@ -865,6 +868,3 @@ export const LinkArrow: FC<IconProps> = ({ className, ...rest }) => (
   </svg>
 );
 
-export const MailIcon: FC<IconProps> = ({ className, ...rest }) => {
-  return <></>;
-};
