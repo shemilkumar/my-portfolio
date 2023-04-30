@@ -864,3 +864,7 @@ export const LinkArrow: FC<IconProps> = ({ className, ...rest }) => (
     />
   </svg>
 );
+
+export const MailIcon: FC<IconProps> = ({ className, ...rest }) => {
+  return <></>;
+};
