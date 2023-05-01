@@ -20,7 +20,10 @@ export default function Home() {
           <Headline title="Full stack developer" />
         </motion.div>
 
-        <motion.pre className="text-2xl" variants={slowItem}>
+        <motion.pre
+          className="text-2xl lg:text-xl md:text-lg sm:text-base xs:text-xs"
+          variants={slowItem}
+        >
           {`I’m a MERN stack developer & love to <code />`}
         </motion.pre>
 

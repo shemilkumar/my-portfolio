@@ -22,7 +22,7 @@ const about: FC<aboutProps> = ({}) => {
 
         <div className="grid grid-cols-12 p-24">
           <motion.div
-            className="flex flex-col col-span-6 xl:pl-48 lg:pl-12"
+            className="flex flex-col col-span-6 pl-48 lg:pl-12"
             initial={{ x: -200, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.7 }}
@@ -52,7 +52,7 @@ const about: FC<aboutProps> = ({}) => {
             <Image
               src={coverPhoto}
               alt="coverPhoto"
-              className="h-auto xl:w-1/2 lg:w-full rounded-xl"
+              className="w-1/2 h-auto p-2 border border-solid lg:w-full rounded-xl dark:bg-light border-dark/50"
             />
           </motion.div>
         </div>
