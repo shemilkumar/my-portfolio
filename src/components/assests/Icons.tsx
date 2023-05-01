@@ -396,7 +396,7 @@ export const MyCircularText: FC<IconProps> = ({ className, dark, ...rest }) => (
     </metadata>
     <g
       transform="translate(0.000000,1080.000000) scale(0.100000,-0.100000)"
-      fill={dark ? "#fff" : "#000"}
+      // fill={dark ? "#FFFFFF" : "#000000"}
       stroke="none"
     >
       <path
