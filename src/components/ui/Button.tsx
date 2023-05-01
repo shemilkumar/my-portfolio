@@ -12,7 +12,7 @@ const Button: FC<ButtonProps> = ({ text, icon, href }) => {
     <Link
       href={href}
       target="_blank"
-      className="flex items-center gap-1 px-4 py-2 font-semibold border-2 rounded-md bg-dark text-light hover:bg-light hover:text-dark border-dark dark:border-light dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light"
+      className="flex items-center gap-1 px-4 py-2 font-semibold border-2 rounded-md bg-dark text-light hover:bg-light hover:text-dark border-dark dark:border-light dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light md:px-3 md:py-1.5 md:text-sm"
     >
       {text}
       {icon}

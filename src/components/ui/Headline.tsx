@@ -26,7 +26,7 @@ export const HeadlineAnimated: FC<HeadlineProps> = ({
 export const Headline: FC<HeadlineProps> = ({ title, className = "" }) => {
   return (
     <motion.h1
-      className={`text-5xl font-bold uppercase text-center ${className}`}
+      className={`text-5xl lg:text-4xl sm:text-3xl xs:text-2xl font-bold uppercase text-center ${className}`}
     >
       {title}
     </motion.h1>
