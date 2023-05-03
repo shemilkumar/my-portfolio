@@ -13,7 +13,7 @@ interface SkillProps {
 const Skill: FC<SkillProps> = ({ name, x, y }) => {
   return (
     <motion.div
-      className="absolute flex items-center justify-center px-6 py-3 font-semibold rounded-full cursor-pointer text-light bg-dark dark:text-dark dark:bg-light shadow-dark dark:shadow-light"
+      className="absolute flex items-center justify-center px-6 py-3 font-semibold rounded-full cursor-pointer text-light bg-dark dark:text-dark dark:bg-light shadow-dark dark:shadow-light lg:bg-transparent lg:text-dark lg:dark:text-white lg:dark:bg-transparent lg:text-sm xs:text-xs"
       initial={{ x: 0, y: 0 }}
       whileInView={{ x, y, transition: { duration: 1.5 } }}
       whileHover={{ scale: 1.1 }}
@@ -26,12 +26,12 @@ const Skill: FC<SkillProps> = ({ name, x, y }) => {
 
 const Skills: FC<SkillsProps> = ({}) => {
   return (
-    <article className="w-full mt-12">
+    <article className="w-full mt-12 lg:mt-6 md:mt-2">
       <HeadlineAnimated title="Skills" className="my-12 " />
 
-      <div className="relative flex items-center justify-center w-full h-screen rounded-full bg-circularLight dark:bg-circularDark">
+      <div className="relative flex items-center justify-center w-full h-screen rounded-full bg-circularLight dark:bg-circularDark lg:bg-circularLightLg lg:dark:bg-circularDarkLg md:bg-circularLightMd md:dark:bg-circularDarkMd sm:bg-circularLightSm sm:dark:bg-circularDarkSm  lg:h-[80vh] sm:h-[60vh] xs:h-[50vh]">
         <motion.div
-          className="flex items-center justify-center w-16 h-16 p-8 font-semibold bg-yellow-500 rounded-full cursor-pointer text-light shadow-dark"
+          className="flex items-center justify-center w-16 h-16 p-8 font-semibold bg-yellow-500 rounded-full cursor-pointer md:w-10 md:h-10 md:p-6 text-light shadow-dark xs:text-sm"
           whileHover={{
             scale: 1.1,
             backgroundColor: [

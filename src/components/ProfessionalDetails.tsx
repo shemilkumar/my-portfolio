@@ -24,9 +24,11 @@ interface professionalDetailsProps {
 const Details: FC<DetailsProps> = ({ details }) => {
   return (
     <div>
-      <h2 className="text-xl font-semibold">{details.position}</h2>
-      <div className="text-base text-dark/75 dark:text-light/75">{`${details.time} | ${details.place}`}</div>
-      <p className="mt-1 text-base font-normal ">{details.info}</p>
+      <h2 className="text-xl font-semibold lg:text-base">{details.position}</h2>
+      <div className="text-base md:text-sm xs:text-xs text-dark/75 dark:text-light/75">{`${details.time} | ${details.place}`}</div>
+      <p className="mt-1 text-base font-normal md:text-sm xs:text-xs">
+        {details.info}
+      </p>
     </div>
   );
 };
@@ -44,7 +46,7 @@ const ProfessionalDetails: FC<professionalDetailsProps> = ({
   return (
     <li
       ref={ref}
-      className="flex items-start justify-between my-2 first:mt-0 last:mb-0 w-[60%] mx-auto"
+      className="flex items-start justify-between my-2 first:mt-0 last:mb-0 w-[60%] lg:w-[80%] mx-auto"
     >
       <LiIcon reference={ref} />
       <motion.div
@@ -54,11 +56,17 @@ const ProfessionalDetails: FC<professionalDetailsProps> = ({
         transition={{ duration: 0.5, type: "sping" }}
       >
         {link ? (
-          <Link href={link} target="_blank" className="text-4xl font-bold">
+          <Link
+            href={link}
+            target="_blank"
+            className="text-4xl font-bold lg:text-3xl sm:text-2xl"
+          >
             {company}
           </Link>
         ) : (
-          <div className="text-3xl font-semibold">{company}</div>
+          <div className="text-3xl font-semibold lg:text-2xl sm:text-xl">
+            {company}
+          </div>
         )}
 
         <Details details={{ position, time, info, place }} />

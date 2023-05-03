@@ -14,9 +14,15 @@ const Experience: FC<ExperienceProps> = ({}) => {
 
   return (
     <article className="w-full">
-      <HeadlineAnimated title="Experience" className="mt-32 mb-20" />
+      <HeadlineAnimated
+        title="Experience"
+        className="mt-32 mb-20 lg:mt-16 lg:mb-12"
+      />
 
-      <div ref={ref} className="relative w-[60%] mx-auto mb-20">
+      <div
+        ref={ref}
+        className="relative w-[60%] lg:w-[80%] md:w-[90%] sm:w-[95%] mx-auto mb-20"
+      >
         <motion.div
           style={{ scaleY: scrollYProgress }}
           className="absolute w-[4px] bg-dark dark:bg-light h-full left-9 top-0 origin-top

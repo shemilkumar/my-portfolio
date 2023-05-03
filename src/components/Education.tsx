@@ -13,10 +13,16 @@ const Education: FC<EducationProps> = ({}) => {
   });
 
   return (
-    <article className="w-full mb-72">
-      <HeadlineAnimated title="Education" className="my-24 text-center" />
+    <article className="w-full mb-72 lg:mb-64 sm:mb-56">
+      <HeadlineAnimated
+        title="Education"
+        className="my-24 text-center xs:my-14 lg:my-16"
+      />
 
-      <div ref={ref} className="relative w-[60%] mx-auto mb-20">
+      <div
+        ref={ref}
+        className="relative w-[60%] lg:w-[80%] md:w-[90%] sm:w-[95%] mx-auto mb-20"
+      >
         <motion.div
           style={{ scaleY: scrollYProgress }}
           className="absolute w-[4px] bg-dark dark:bg-light h-full left-9 top-0 origin-top
