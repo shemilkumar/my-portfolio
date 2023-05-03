@@ -24,15 +24,6 @@ interface ProjectProps {
   summary?: string;
 }
 
-{
-  /* <p>{`
-      The frontend, on the other hand, was developed using React.js, TailwindCSS, and Redux, providing a better user interface with reusable components. Both the frontend and backend were fully written in TypeScript, ensuring type safety and code clarity.`}</p>
-          <p>
-            {`
-      One of the key features of this application is its secure authentication system, which was implemented using JWT and HTTP only cookies. This system ensures access control and data protection, safeguarding user data from unauthorized access.`}
-          </p> */
-}
-
 const FeaturedProject: FC<ProjectProps> = ({
   image,
   title,
@@ -56,7 +47,7 @@ const FeaturedProject: FC<ProjectProps> = ({
           <Link href={github} target="_blank" className="w-10 h-auto">
             <GithubIcon />
           </Link>
-      
+
           <Button text="Visit Project" href={link} />
         </div>
       </div>
@@ -95,7 +86,7 @@ const Projects: FC<ProjectsProps> = ({}) => {
     <>
       <SEO pageTitle="Projects | Shemil" pageDescription="" />
       <main className="w-full">
-        <HeadlineAnimated title="My Projects" className="pt-36" />
+        <HeadlineAnimated title="My Projects" className="pt-36 lg:pt-20" />
         <div className="grid grid-cols-12 pb-20 mt-16 gap-y-40 gap-x-24">
           <motion.div
             className="col-span-12"

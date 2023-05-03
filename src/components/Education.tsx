@@ -28,6 +28,7 @@ const Education: FC<EducationProps> = ({}) => {
           className="absolute w-[4px] bg-dark dark:bg-light h-full left-9 top-0 origin-top
           md:w-[4px] md:left-[29px] xs:left-[19px]"
         />
+
         <ul className="flex flex-col items-start w-full gap-8 ml-4">
           <ProfessionalDetails
             company="Master of Computer Science"
