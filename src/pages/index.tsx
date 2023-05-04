@@ -1,6 +1,6 @@
 import SEO from "@/components/SEO";
 import HireMe from "@/components/assests/HireMe";
-import { CircularText, LinkArrow } from "@/components/assests/Icons";
+import { LinkArrow } from "@/components/assests/Icons";
 import Button from "@/components/ui/Button";
 import Headline from "@/components/ui/Headline";
 import { slowContainer, slowItem } from "@/util/staggeredAnimation";
