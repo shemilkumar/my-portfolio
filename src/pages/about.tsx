@@ -53,6 +53,7 @@ const about: FC<aboutProps> = ({}) => {
               src={coverPhoto}
               alt="coverPhoto"
               className="w-3/4 p-2 border border-solid md:5/6 lg:w-1/2 xl:w-11/12 rounded-xl dark:bg-light border-dark/50 xs:w-11/12"
+              priority
             />
           </motion.div>
         </div>
