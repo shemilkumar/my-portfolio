@@ -10,7 +10,10 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <SEO pageTitle="Home | Shemil" pageDescription="" />
+      <SEO
+        pageTitle="Home | Shemil"
+        pageDescription={`Shemilkumar is a Fullstack developer (MERN stack developer) with a passion for creating stunning designs and projects that help businesses stand out. Explore his portfolio and contact Shemil for your next project.`}
+      />
       <main className="flex items-center justify-center h-screen">
         <motion.div
           className="flex flex-col items-center justify-center gap-4 overflow-hidden"

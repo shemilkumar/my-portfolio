@@ -34,7 +34,12 @@ const ContactList: FC<ContactListProps> = ({ href, icon, iconSrc, text }) => {
 const contact: FC<contactProps> = ({}) => {
   return (
     <>
-      <SEO pageTitle="Contact | Shemil" pageDescription="" />
+      <SEO
+        pageTitle="Contact | Shemil"
+        pageDescription={
+          "Contact Shemilkumar, a talented Fullstack developer with expertise in web development, JavaScript, React, Node.js, and MongoDB. Discover his impressive portfolio of projects and services, including e-commerce websites and custom web applications, and see how Shemil can help you build a dynamic and responsive online presence. Contact him today to take the first step toward driving business growth through technology."
+        }
+      />
       <main className="flex flex-col items-center justify-center w-full">
         <motion.div
           className="grid w-[85%] xl:w-full grid-cols-12 pt-56 gap-y-5"

@@ -15,7 +15,9 @@ const about: FC<aboutProps> = ({}) => {
     <>
       <SEO
         pageTitle="About | Shemil"
-        pageDescription="About page of portfolio"
+        pageDescription={
+          "Discover how Shemilkumar, an experienced MERN stack developer with expertise in JavaScript, React, Node.js, and MongoDB, can help you build dynamic and responsive web applications that drive results. Explore his portfolio and achievements, and contact him to learn more."
+        }
       />
       <main className="flex flex-col items-center justify-center w-full">
         <HeadlineAnimated title="About ME" className="mt-32 lg:mt-14" />

@@ -14,7 +14,12 @@ import ForkifyImage from "../../public/img/Forkify-min.png";
 const Projects = ({}) => {
   return (
     <>
-      <SEO pageTitle="Projects | Shemil" pageDescription="" />
+      <SEO
+        pageTitle="Projects | Shemil"
+        pageDescription={
+          "Discover Shemilkumar's impressive portfolio of Fullstack projects that showcase his skills in web development, JavaScript, React, Node.js, and MongoDB. From e-commerce websites to custom web applications, explore his work and see how he can help you bring your ideas to life. Contact him today to learn more."
+        }
+      />
       <main className="w-full">
         <HeadlineAnimated
           title="My Projects"
