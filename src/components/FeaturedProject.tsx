@@ -37,7 +37,7 @@ const FeaturedProject: FC<ProjectProps> = ({
           alt="project"
           src={image}
           className="w-full rounded-lg"
-          priority
+          priority={true}
         />
       </Link>
 

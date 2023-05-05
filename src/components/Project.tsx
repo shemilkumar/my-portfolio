@@ -26,7 +26,7 @@ const Project: FC<ProjectProps> = ({
           alt="project"
           src={image}
           className="w-full rounded-lg "
-          priority
+          priority={true}
         />
       </Link>
       <div className="flex flex-col items-start justify-between w-full gap-4">

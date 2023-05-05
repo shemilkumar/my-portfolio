@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <SEO
-        pageTitle="Home | Shemil"
+        pageTitle="Shemil"
         pageDescription={`Shemilkumar is a Fullstack developer (MERN stack developer) with a passion for creating stunning designs and projects that help businesses stand out. Explore his portfolio and contact Shemil for your next project.`}
       />
       <main className="flex items-center justify-center h-screen">
@@ -23,7 +23,7 @@ export default function Home() {
         >
           <motion.div className="flex flex-col gap-4" variants={slowItem}>
             <Headline title="Hey, I'm Shemil," />
-            <Headline title="Full stack developer" />
+            <Headline title="Full stack developer" className="xs:text-2xl" />
           </motion.div>
 
           <motion.pre
