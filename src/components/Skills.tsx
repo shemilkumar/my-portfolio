@@ -29,7 +29,7 @@ const Skills: FC<SkillsProps> = ({}) => {
     <article className="w-full mt-12 lg:mt-6 md:mt-2">
       <HeadlineAnimated title="Skills" className="my-12 " />
 
-      <div className="relative flex items-center justify-center w-full h-screen rounded-full bg-circularLight dark:bg-circularDark lg:bg-circularLightLg lg:dark:bg-circularDarkLg md:bg-circularLightMd md:dark:bg-circularDarkMd sm:bg-circularLightSm sm:dark:bg-circularDarkSm  lg:h-[80vh] sm:h-[60vh] xs:h-[50vh]">
+      <div className="relative flex items-center justify-center w-full h-screen rounded-full bg-circularLight dark:bg-circularDark lg:bg-circularLightLg lg:dark:bg-circularDarkLg md:bg-circularLightMd md:dark:bg-circularDarkMd sm:bg-circularLightSm sm:dark:bg-circularDarkSm  lg:h-[80vh] sm:h-[60vh] xs:h-[40vh]">
         <motion.div
           className="flex items-center justify-center w-16 h-16 p-8 font-semibold bg-yellow-500 rounded-full cursor-pointer md:w-10 md:h-10 md:p-6 text-light shadow-dark xs:text-sm"
           whileHover={{
@@ -49,10 +49,10 @@ const Skills: FC<SkillsProps> = ({}) => {
           Web
         </motion.div>
 
-        <Skill name={"Typescript"} x={"-5vw"} y={"-11vw"} />
+        <Skill name={"Typescript"} x={"-5vw"} y={"-12vw"} />
         <Skill name={"Node"} x={"-20vw"} y={"-2vw"} />
-        <Skill name={"MongoDB"} x={"22vw"} y={"7vw"} />
-        <Skill name={"Javascript"} x={"6vw"} y={"8vw"} />
+        <Skill name={"MongoDB"} x={"25vw"} y={"4vw"} />
+        <Skill name={"Javascript"} x={"7vw"} y={"8vw"} />
         <Skill name={"Redux"} x={"-23vw"} y={"-16vw"} />
         <Skill name={"Express"} x={"18vw"} y={"-14vw"} />
         <Skill name={"React"} x={"-12vw"} y={"5vw"} />

@@ -43,7 +43,7 @@ const Experience: FC<ExperienceProps> = ({}) => {
             position="Graduate Trainee"
             time="2021 - 2022"
             place="New Delhi"
-            info={`Worked on a team responsible for developing a new mobile app feature that allowed users to create and share short-form video content, including designing and implementing a new user interface and developing the backend infrastructure to support the feature.`}
+            info={`Got training for front-end and Back-end such as HTML& CSS, Javascript, Java, Python, React and Nodejs`}
             link="www.tcs.com"
           />
         </ul>

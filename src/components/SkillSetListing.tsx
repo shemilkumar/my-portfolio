@@ -4,7 +4,7 @@ import { fastContainer, fastItem } from "@/util/staggeredAnimation";
 const SkillSetListing = ({ technologies }: { technologies?: string[] }) => {
   return (
     <motion.div
-      className="absolute flex flex-wrap items-center justify-center w-full h-full p-12 bg-dark/70"
+      className="absolute flex flex-wrap items-center justify-center w-full h-full p-12 bg-dark/70 md:hidden"
       variants={fastContainer}
       initial="hidden"
       whileHover="show"
