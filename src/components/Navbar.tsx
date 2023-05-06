@@ -1,5 +1,11 @@
 import { Dispatch, FC, SetStateAction, useEffect, useState } from "react";
-import { GithubIcon, LinkedInIcon, MoonIcon, SunIcon } from "./assests/Icons";
+import {
+  GithubIcon,
+  LinkedInIcon,
+  MoonIcon,
+  SunIcon,
+  SunIconMobile,
+} from "./assests/Icons";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
@@ -122,7 +128,11 @@ const Navbar: FC<NavbarProps> = ({}) => {
 
         {/* Mobile Menu */}
         {isOpenMenu ? (
-          <nav className="fixed top-0 left-0 z-30 w-full h-full bg-dark/90 backdrop-blur-lg text-light/75 dark:bg-light/75 dark:text-dark/75">
+          <motion.nav
+            className="fixed top-0 left-0 z-30 w-full h-full bg-dark/90 backdrop-blur-lg text-light/75 dark:bg-light/75 dark:text-dark/75"
+            initial={{ scale: 0.2 }}
+            animate={{ scale: 1 }}
+          >
             <div className="fixed flex flex-col items-center justify-end gap-8 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 ">
               <NavigationLink
                 text="Home"
@@ -150,7 +160,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
               />
 
               <button
-                className={`flex items-center justify-center p-0.5 px-2 rounded-full
+                className={`flex items-center justify-center px-2 rounded-full
         ${theme === "dark" ? "bg-light text-dark" : "bg-dark text-light"}`}
                 onClick={hadleTheme}
               >
@@ -160,14 +170,14 @@ const Navbar: FC<NavbarProps> = ({}) => {
                     <MoonIcon className="fill-dark" />
                   </div>
                 ) : (
-                  <div className="flex gap-2 p-1">
+                  <div className="flex items-center justify-center gap-1 pl-2">
                     <span>Dark</span>
-                    <SunIcon className="fill-dark" />
+                    <SunIconMobile className="fill-dark" />
                   </div>
                 )}
               </button>
             </div>
-          </nav>
+          </motion.nav>
         ) : null}
       </motion.header>
     </>
