@@ -15,7 +15,7 @@ const Project: FC<ProjectProps> = ({
   technologies,
 }) => {
   return (
-    <article className="flex flex-col items-center justify-center w-full gap-8 p-6 border border-solid shadow-2xl dark:shadow-b-lg rounded-2xl dark:shadow-purple-300 xs:p-4 md:shadow-lg">
+    <article className="flex flex-col items-center justify-center w-full gap-8 p-6 border border-solid shadow-2xl dark:border-gray-500 rounded-2xl dark:shadow-2xl xs:p-4 md:shadow-lg">
       <Link
         href={link}
         target="_blank"

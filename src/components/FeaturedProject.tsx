@@ -26,7 +26,7 @@ const FeaturedProject: FC<ProjectProps> = ({
   technologies,
 }) => {
   return (
-    <motion.article className="flex items-center justify-center w-full gap-8 p-12 border border-solid shadow-2xl xl:py-16 xl:flex-col border-dark/25 dark:shadow-purple-300 rounded-xl md:p-8 xs:p-4 sm:gap-4 md:shadow-lg">
+    <motion.article className="flex items-center justify-center w-full gap-8 p-12 border border-solid shadow-2xl xl:py-16 xl:flex-col border-dark/25 rounded-xl md:p-8 xs:p-4 sm:gap-4 md:shadow-lg">
       <Link
         href={link}
         target="_blank"

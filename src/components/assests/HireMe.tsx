@@ -24,7 +24,7 @@ const HireMe: FC<HireMeProps> = ({}) => {
         <MyCircularText className="fill-dark dark:fill-light animate-spin-slow" />
         <Link
           href="mailto:shemil0055@gmail.com"
-          className="absolute flex items-center justify-center w-20 h-20 font-semibold -translate-x-1/2 -translate-y-1/2 border border-solid rounded-full shadow-xl sm:w-16 sm:h-16 sm:text-sm bg-dark text-light border-dark top-1/2 left-1/2 hover:bg-light hover:text-dark dark:bg-light dark:text-dark dark:border-light hover:dark:bg-dark hover:dark:text-light"
+          className="absolute flex items-center justify-center w-20 h-20 font-semibold -translate-x-1/2 -translate-y-1/2 border border-solid rounded-full shadow-xl sm:w-16 sm:h-16 sm:text-sm bg-dark text-light border-dark top-1/2 left-1/2 hover:bg-light hover:text-dark dark:bg-fuchsia-100 dark:text-dark dark:border-light hover:dark:bg-dark hover:dark:text-light"
         >
           Hire Me
         </Link>

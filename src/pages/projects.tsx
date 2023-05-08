@@ -20,10 +20,10 @@ const Projects = ({}) => {
           "Discover Shemilkumar's impressive portfolio of Fullstack projects that showcase his skills in web development, JavaScript, React, Node.js, and MongoDB. From e-commerce websites to custom web applications, explore his work and see how he can help you bring your ideas to life. Contact him today to learn more."
         }
       />
-      <main className="w-full">
+      <main className="flex flex-col items-center justify-center w-full">
         <HeadlineAnimated
           title="My Projects"
-          className="pt-36 lg:pt-20 md:pt-14"
+          className="mt-36 lg:mt-20 md:mt-14"
         />
         <div className="grid w-full grid-cols-12 pb-20 mt-16 md:mt-10 gap-y-40 xl:gap-y-20 md:gap-y-6">
           <motion.div
