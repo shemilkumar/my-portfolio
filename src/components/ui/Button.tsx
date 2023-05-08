@@ -25,7 +25,7 @@ export const ButtonOutline: FC<ButtonProps> = ({ text, icon, href }) => {
     <Link
       href={href}
       target="_blank"
-      className="flex items-center gap-1 px-3 py-1.5 text-sm font-semibold border rounded-full bg-transparent text-dark hover:bg-light hover:text-dark border-dark dark:border-light  dark:text-light border-solid"
+      className="flex items-center gap-1 px-3 py-1.5 text-sm font-semibold border rounded-full bg-transparent text-dark border-dark dark:border-light dark:text-light border-solid"
     >
       {text}
       {icon}
