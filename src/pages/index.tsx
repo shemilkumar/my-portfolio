@@ -22,8 +22,14 @@ export default function Home() {
           animate="show"
         >
           <motion.div className="flex flex-col gap-4" variants={slowItem}>
-            <Headline title="Hey, I'm Shemil," />
-            <Headline title="Full stack developer" className="xs:text-2xl" />
+            <Headline
+              title="Hey, I'm Shemil,"
+              className="dark:via-fuchsia-300 dark:to-fuchsia-950"
+            />
+            <Headline
+              title="Full stack developer"
+              className="xs:text-2xl dark:via-fuchsia-300 dark:to-fuchsia-950"
+            />
           </motion.div>
 
           <motion.pre
